@@ -1,0 +1,167 @@
+/* Main Containers */
+.main-container {
+    height: 90vh;
+    overflow: auto;
+}
+
+.body-container {
+    height: 90vh;
+    overflow: auto;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width:768px) {
+    .body-container {
+        padding: 15px;
+    }
+}
+
+/* Sidebar & Filters */
+.sidebar-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    color: #000000;
+    border-right: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.searchbar-container, .category-filter-container {
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .sidebar-container {
+        flex-direction: column;
+    }
+    .searchbar-container, .category-filter-container {
+        width: 100%;
+    }
+    .description {
+        display: none;
+    }
+}
+
+/* Products List & Cards */
+.products-container {
+    width: 100%;
+}
+
+.products-list-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    width: 20rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 128, 0, 0.2);
+    transform: scale(1.03);
+    border-color: #dc143c;
+}
+
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: 49%;
+    }
+}
+
+/* Button Container */
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .buttons-container {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Loader */
+.loader-container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Update Card Style */
+.update-card {
+    border: 1px solid #38a169;
+}
+.carousel-inner img {
+    max-width: 50%; /* Adjust as needed */
+    max-height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image scales properly without distortion */
+    margin: 0 auto; /* Centers the image */
+}
+/* Button Customizations */
+
+/* Rating Background */
+.rating-background {
+    background-color: #5ec401 !important;
+    color: #ffffff;
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 16px;
+}
+
+/* Add and Buy Buttons */
+ .btn-buy-now {
+    background-color: #dc143c !important;
+    border-color: #dc143c !important;
+    color: #ffffff;
+    width: 100%;
+}
+.btn-add-to-cart{
+    background-color: #5ec401 !important;
+    border-color: #5ec401 !important;
+    color: #ffffff;
+    width: 100%;
+}
+
+ .btn-buy-now:hover {
+    background-color: #b21334 !important;
+    border-color: #b21334 !important;
+}
+.btn-add-to-cart:hover{
+    background-color: #5ec401 !important;
+    border-color: #5ec401 !important;
+}
+.btn-search{
+    background-color: #dc143c !important;
+    border-color: #dc143c !important;
+    color: #ffffff;
+    width: 100%;
+}
+.btn-search:hover{
+    background-color: #b21334 !important;
+    border-color: #b21334 !important;
+}

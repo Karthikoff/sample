@@ -1,0 +1,105 @@
+.main-container{
+    height: 90vh;
+    overflow: auto;
+    width: 100%;
+}
+.products-container{
+    width: 100%;
+    display: flex;
+}
+
+.products-list-container{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+@media screen and (max-width:768px) {
+    .products-list-container{
+        width: 100%;
+    }
+}
+
+.card{
+    width: 16rem
+}
+
+@media screen and (max-width:768px) {
+    .card{
+        width: 48%;
+    }
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+.loader-container{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-img-top{
+    height: 200px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .buttons-container{
+        flex-direction: column;
+    }
+    .btn{
+        width: 100%;
+    }
+    .description{
+        display: none;
+    }
+}
+
+/* Card Styles */
+.product-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #dc143c;
+}
+
+/* Update and Delete Button Styles */
+.update-btn {
+    background-color: #5ec401;
+    border-color: #5ec401;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc143c;
+    border-color: #dc143c;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #5ec401;
+    border-color: #5ec401;
+    transform: scale(1.05);
+}
+
+.delete-btn:hover {
+    background-color: #dc143c;
+    border-color: #dc143c;
+    transform: scale(1.05);
+}

@@ -1,0 +1,61 @@
+/* Navbar Styling */
+.navbar {
+  min-height: 10vh;
+  padding: 10px 40px;
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #dc143c; /* Clean white background */
+  transition: padding 0.3s ease; /* Smooth transition for padding changes */
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 20px; /* Slightly reduced padding for mobile */
+  }
+}
+
+/* Navbar Links Styling */
+.navbar-nav .nav-link {
+  color: #ffffff; /* Neutral color for inactive links */
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-weight: 500;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Green color on hover */
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff; /* Green color for active links */
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff; /* Underline for active links */
+}
+
+/* Logo Image Styling */
+.image-logo {
+  width: 60px;
+  margin-right: 20px;
+  transition: width 0.3s ease; /* Smooth transition for logo size */
+}
+
+/* Adjust logo size for smaller screens */
+@media screen and (max-width: 768px) {
+  .image-logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+/* Logout Button Styling */
+.logoutCss {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
